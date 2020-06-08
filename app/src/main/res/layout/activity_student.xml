@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.check_course.StudentActivity"
+    android:background="@drawable/timg">
+
+    <TextView
+        android:id="@+id/welcomeUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎你"
+        android:textSize="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="选/退课"
+        android:layout_below="@+id/welcomeUserName"
+        android:layout_toStartOf="@+id/welcomeUserName"
+        android:layout_marginEnd="16dp" />
+
+    <ListView
+        android:id="@+id/lv4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button14"
+        android:layout_marginTop="22dp" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刷新"
+        android:layout_above="@+id/lv4"
+        android:layout_toEndOf="@+id/welcomeUserName"
+        android:layout_marginStart="36dp" />
+
+
+</RelativeLayout>

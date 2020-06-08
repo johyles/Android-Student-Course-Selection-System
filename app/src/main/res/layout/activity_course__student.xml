@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.check_course.Course_StudentActivity"
+    android:background="@drawable/timg">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="课程管理"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text="课程编号："
+        android:textSize="18dp"
+        android:layout_alignBaseline="@+id/editText5"
+        android:layout_alignBottom="@+id/editText5"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  课 程 名："
+        android:textSize="18dp"
+        android:layout_alignBaseline="@+id/editText9"
+        android:layout_alignBottom="@+id/editText9"
+        android:layout_toStartOf="@+id/editText5" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="     学   分："
+        android:layout_alignBaseline="@+id/editText10"
+        android:layout_alignBottom="@+id/editText10"
+        android:layout_alignStart="@+id/textView26" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/textView13"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint=""
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText5"
+        android:layout_below="@+id/editText5"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint=""
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText9"
+        android:layout_below="@+id/editText9"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText10"
+        android:layout_marginTop="13dp"
+        android:layout_toStartOf="@+id/editText10"
+        android:text="选课" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button15"
+        android:layout_toEndOf="@+id/textView12"
+        android:text="退课" />
+
+    <ListView
+        android:id="@+id/lv3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button15"
+        android:layout_marginTop="14dp" />
+
+
+</RelativeLayout>
